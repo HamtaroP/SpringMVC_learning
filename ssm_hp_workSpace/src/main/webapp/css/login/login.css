@@ -1,0 +1,33 @@
+body  
+{
+    font-size: .80em;
+    font-family: "HelveticaNeue","LucidaGrande","SegoeUI",Arial, Helvetica, Verdana, sans-serif;
+    color: #696969;
+    background-image: url("../../img/window.jpg");
+    margin:0 auto;
+    padding:0;
+    height: 100%;
+}
+
+.loginPanel{
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 width:444px;
+	 height:332px;
+	 margin-left:-200px;
+	 margin-top:-150px;
+	 background-image: url("../../img/panel.png");
+}
+
+.userBox{
+	margin-top:90px;
+	margin-left:80px;
+	width:280px;
+}
+.foricon{
+	top:1px;
+}
+.loginBtn{
+	margin-top:15px;
+}
