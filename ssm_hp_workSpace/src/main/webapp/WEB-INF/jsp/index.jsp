@@ -10,17 +10,21 @@
     <link href="css/login/login.css" rel="stylesheet">
   </head>
   <body >
+  	<div align="center">
+  		<h1 class="loginTitle">协同办公管理系统</h1>
+  	</div>
     <div class='loginWindow'>
     	<div class='loginPanel'>
     		<div class="userBox">
-			       <form class="bs-example bs-example-form" role="form">
+    			  <div style="height:35px; margin-bottom:15px;"><img alt="图片不存在" src="img/headt.png" /><span class="loginPaneltitle">用户登录</span></div>
+			       <form class="bs-example bs-example-form" role="form" id="loginform">
 						<div class="input-group">
-							<input type="text" class="form-control foricon" placeholder="用户名">
+							<input id="userName" type="text" class="form-control foricon" placeholder="用户名">
 							<span class="input-group-addon glyphicon glyphicon-user"></span>
 						</div>
 						<br>
 						<div class="input-group">
-							<input type="text" class="form-control foricon" placeholder="密码">
+							<input id="userPassword" type="password" class="form-control foricon" placeholder="密码">
 							<span class="input-group-addon glyphicon glyphicon-lock"></span>
 						</div>
 					</form>

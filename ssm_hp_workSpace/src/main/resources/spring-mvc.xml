@@ -47,5 +47,12 @@
         <!-- 内存中的最大值 -->  
         <property name="maxInMemorySize" value="40960" />    
     </bean>   
-  
-</beans>  
+    <mvc:annotation-driven/>
+  	<mvc:default-servlet-handler/> 
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+	<mvc:resources location="/WEB-INF/font/" mapping="/font/**"/>
+	<mvc:resources location="/WEB-INF/fonts/" mapping="/fonts/**"/>
+	<mvc:resources location="/WEB-INF/img/" mapping="/img/**"/>
+</beans>
+		  

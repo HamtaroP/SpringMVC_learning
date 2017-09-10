@@ -11,11 +11,13 @@ requirejs.config({
     	'bootstrap':['jquery']
     }
 });
-require(["js/login/teacher"], function(teacher){
+require(["js/login/user"], function(user){
 	$("#test_login").on('click', function(){
-		teacher.addStudent('胡鹏',24);
-		teacher.addStudent('卢春晴',23);
-		teacher.showStudents();
-	})
+		var userName = $("#userName").val();
+		var userPassword = $("#userPassword").val();
+		user.checkPassword(userName,userPassword);
+		
+	});
+	
 })
 

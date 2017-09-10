@@ -27,4 +27,8 @@ public class UserController {
 			public String showIndex(HttpServletRequest request,Model model){
 			    return "index";
 			}
+		 @RequestMapping("/checkPassword")
+			public String checkPassword(HttpServletRequest request,Model model){
+		        return "showUser";  
+			}
 }
