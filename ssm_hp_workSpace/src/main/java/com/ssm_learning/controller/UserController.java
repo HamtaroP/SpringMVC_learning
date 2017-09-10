@@ -12,7 +12,6 @@ import com.ssm_learning.domain.User;
 import com.ssm_learning.service.IUserService;
 
 @Controller
-@RequestMapping("user")
 public class UserController {
 		@Resource  
 	    private IUserService userService;  
@@ -23,5 +22,9 @@ public class UserController {
 		        User user = this.userService.getUserById(userId);  
 		        model.addAttribute("user", user);  
 		        return "showUser";     
-	    }    
+	    }
+		 @RequestMapping("/index")
+			public String showIndex(HttpServletRequest request,Model model){
+			    return "index";
+			}
 }

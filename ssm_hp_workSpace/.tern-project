@@ -1,0 +1,30 @@
+{
+  "ecmaVersion": 5,
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "requirejs": {
+      
+    },
+    "extjs4.2.1": {
+      
+    },
+    "yui3": {
+      
+    },
+    "requirejs-extension": {
+      
+    },
+    "bootstrap": {
+      
+    }
+  },
+  "libs": [
+    "browser",
+    "jquery"
+  ]
+}
