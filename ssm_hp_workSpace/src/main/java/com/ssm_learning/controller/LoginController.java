@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.alibaba.fastjson.JSONObject;
 import com.ssm_learning.domain.User;
 import com.ssm_learning.service.IUserService;
 
@@ -23,13 +24,16 @@ public class LoginController {
 	
 	 @RequestMapping("/checkPassword")
 		public void checkPassword(HttpServletRequest request,HttpServletResponse response ,Model model){
-		 	User user = this.userService.getUserById(21);  
+		 	User user = this.userService.getUserById(1);  
 	        model.addAttribute("user", user);
-	        HashMap<Object, Object> map = new HashMap<>();
+	        
 	        PrintWriter out = null;
+	        String uJson = JSONObject.toJSONString(user);
 	        try {
+	        	response.setCharacterEncoding("UTF-8");
+	        	response.setHeader("contentType", "text/html; charset=utf-8");
 				out = response.getWriter();
-				out.print("test");
+				out.write(uJson);
 		        out.flush();
 		        out.close();
 			} catch (IOException e) {
