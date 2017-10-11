@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" media="screen" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/login/login.css" rel="stylesheet">
+    <link href="css/webuploader.css" rel="stylesheet">
   </head>
   <body >
   	<div align="center">
@@ -34,6 +35,15 @@
 			
     	</div>
     </div>
+    <div id="uploader" class="wu-example">
+    <!--用来存放文件信息-->
+    <div id="thelist" class="uploader-list"></div>
+    <div class="btns">
+        <div id="picker">选择文件</div>
+        <button id="ctlBtn" class="btn btn-default">开始上传</button>
+    </div>
+</div>
+
    
     <script data-main="js/login/login" src="js/require.js"></script>
 </body>
